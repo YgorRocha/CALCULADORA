@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculo Interativo</h1>
+    <h3>Escolha sua operação</h3>
+  
+<div id=blocos>
+<button type="button" value="somar" onclick="somar()"  id="valor1" >Somar</button>
+<button type="button" value="somar" onclick="multiplicar()" id="valor2" >Multiplicar</button>
+<button type="button" value="somar" onclick="dividir()" id="valor3" >Dividir</button>
+<button type="button" value="somar" onclick="subtrair()" id="valor4" >Subtrair</button>
+</div>
+
+<div>
+<input type="numero" name="calculo" id="conversão" placeholder="insira o primeiro valor">
+<input type="numero" name="calculo2" id="conversão2" placeholder="insira o segundo valor">
+</div>
+<div id="aqui">Resultado</div>
+
+
+<script>
+
+
+
+function somar(){
+
+    var n1 = document.querySelector("div#conversão")
+    var n2 = document.querySelector("div#conversão2")
+    var button = document.querySelector("div#valor")
+
+var n1 = Number(conversão.value)
+var n2 = Number(conversão2.value)
+
+var s = n1 + n2
+
+aqui.innerHTML=`O resultado é ${s}`
+
+}
+function multiplicar(){
+
+var n1 = document.querySelector("div#conversão")
+var n2 = document.querySelector("div#conversão2")
+var button = document.querySelector("div#valor")
+
+var n1 = Number(conversão.value)
+var n2 = Number(conversão2.value)
+
+var s = n1 * n2
+
+aqui.innerHTML=`O resultado é ${s}`
+}
+
+function dividir(){
+
+var n1 = document.querySelector("div#conversão")
+var n2 = document.querySelector("div#conversão2")
+var button = document.querySelector("div#valor")
+
+var n1 = Number(conversão.value)
+var n2 = Number(conversão2.value)
+
+var s = n1 / n2
+
+
+aqui.innerHTML=`O resultado é ${s}`
+
+
+}
+
+function subtrair(){
+
+var n1 = document.querySelector("input#conversão")
+var n2 = document.querySelector("input#conversão2")
+var button = document.querySelector("div#valor")
+
+var n1 = Number(conversão.value)
+var n2 = Number(conversão2.value)
+
+var s = n1 - n2
+
+aqui.innerHTML=`O resultado é ${s}`
+}
+
+</script>
+
+   
+    
+<style>
+    button {
+  color: white;
+  background: blue;
+  transition: background 0.5s;
+}
+
+button:hover,
+button:focus {
+  background: red;
+}
+        
+        
+        h1{
+            color:#F8F8FF;
+            text-shadow: 0.1em 0.1em 0.2em black;
+            text-align: center;
+            animation: go-back 1s infinite alternate;
+        }
+        @keyframes go-back {
+    0% {
+        transform: translateX(200px);
+    }
+    200% {
+        transform: translateX(10);
+    }
+}
+        body{ background-image: url("https://www.planocritico.com/wp-content/uploads/2020/09/17-Interestelar_2014.jpg"); }
+        img { opacity : 2.5 }
+
+        h3{
+            color:#F8F8FF;
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+</style>
+
+
+
+</body>
+</html>
+
+
